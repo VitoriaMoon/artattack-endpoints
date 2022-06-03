@@ -1,0 +1,145 @@
+(1) login
+/POST  /usuario/login
+
+    request
+    {
+    "email": "",
+    "senha": ""
+    }
+
+    response
+    {
+        "id":0, (id do usuário)
+        "email": "",
+        "nome": "" (nome do usuário)
+    }
+
+(2) alterar informações da conta 
+
+    /PUT   /usuario/:id
+
+    request  
+    {
+    "nome": "",
+    "imagem de perfil": "",
+    "ocupação": "",
+    "descricao": "",
+    "contato": ""
+    }
+
+    response (204)
+    -- sem conteúdo    
+
+(3) criar projetos
+
+    /POST      /projeto/
+
+    request 
+    {
+    "nome": "",
+    "descricao": "",
+    "categoria": "",
+    "materiais": "",
+    "imagem": "",
+    "usuario": 0
+    }
+
+    response
+    {
+    "id": 1,
+    "nome": "",
+    "descricao": "",
+    "categoria": "",
+    "materiais": "",
+    "imagem": "",
+    "usuario": 0
+    }
+
+(4) alterar projeto
+    /PUT   /projeto/:id
+
+    request 
+    {
+    "nome": "",
+    "descricao": "",
+    "categoria": "",
+    "materiais": "",
+    "imagem": ""
+    }
+    
+    response (204)
+    -- sem conteúdo
+
+(5) pesquisar por categoria de */projeto/*
+
+ /GET /projeto/:categoria
+
+    response
+    [
+        {
+        "nome": "",
+        "descricao": "",
+        "categoria": "",
+        "materiais": "",
+        "imagem": ""
+        }
+    ]
+
+(6) pesquisar por nome de */projeto/* 
+
+    /GET /projeto/:nome
+
+    response
+    [
+        {
+        "nome": "",
+        "descricao": "",
+        "categoria": "",
+        "materiais": "",
+        "imagem": ""
+        }
+    ]
+
+(7) pesquisar por id de */projeto/*
+
+    /GET /projeto/:id
+
+    response
+    [
+        {
+        "nome": "",
+        "descricao": "",
+        "categoria": "",
+        "materiais": "",
+        "imagem": ""
+        }
+    ]
+
+(8) pesquisar por nome de */usuario/*    
+
+    /GET /usuario/:nome
+    [
+        response 
+        {
+        "nome": "",
+        "imagem de perfil": "",
+        "ocupação": "",
+        "descricao": "",
+        "contato": ""
+        }
+    ]
+
+(9) pesquisar po id de */usuario/*  
+
+    /GET /usuario/:id
+    [
+        response 
+        {
+        "nome": "",
+        "imagem de perfil": "",
+        "ocupação": "",
+        "descricao": "",
+        "contato": ""
+        }
+    ]
+
