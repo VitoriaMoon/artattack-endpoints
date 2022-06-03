@@ -1,3 +1,5 @@
+
+
 (1) login
 /POST  /usuario/login
 
@@ -28,7 +30,7 @@
     }
 
     response (204)
-    -- sem conteúdo    
+    -- sem conteúdo        
 
 (3) criar projetos
 
@@ -143,3 +145,14 @@
         }
     ]
 
+(10) deletar usuario
+
+    /DELETE   /usuario/:id
+
+    response (204)
+
+(11) deletar projeto
+
+    /DELETE   /projeto/:id
+
+    response (204)
